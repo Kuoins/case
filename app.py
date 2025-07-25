@@ -126,12 +126,12 @@ if not DATABASE_URL:
 if not TONNEL_SENDER_INIT_DATA:
     logger.warning("TONNEL_SENDER_INIT_DATA not set! Tonnel gift withdrawal will likely fail.")
 
-NORMAL_WEBAPP_URL = "https://vasiliy-katsyka.github.io/case"
+NORMAL_WEBAPP_URL = "https://kuoins.github.io/case/"
 MAINTENANCE_WEBAPP_URL = "https://vasiliy-katsyka.github.io/maintencaincec" # If you still use this
 # Example: Choose based on an environment variable or a fixed value for production
 WEBAPP_URL = NORMAL_WEBAPP_URL # Assuming normal operation on the server
 
-API_BASE_URL = "https://case-hznb.onrender.com" # Your backend API URL
+API_BASE_URL = "https://case-jq36.onrender.com" # Your backend API URL
 
 
 # --- SQLAlchemy Database Setup ---
