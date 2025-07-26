@@ -546,7 +546,7 @@ def setup_telegram_webhook(flask_app_instance):
         WEBHOOK_URL_BASE = f"https://{render_hostname}"
     else:
         # Fallback to your explicitly provided server URL if RENDER_EXTERNAL_HOSTNAME is not available
-        WEBHOOK_URL_BASE = "https://case-hznb.onrender.com"
+        WEBHOOK_URL_BASE = "https://case-jq36.onrender.com"
         logger.warning(f"RENDER_EXTERNAL_HOSTNAME not found, using manually configured URL: {WEBHOOK_URL_BASE}")
 
     FULL_WEBHOOK_URL = f"{WEBHOOK_URL_BASE}{WEBHOOK_PATH}"
