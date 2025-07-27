@@ -43,7 +43,7 @@ DEPOSIT_COMMENT = os.environ.get("DEPOSIT_COMMENT", "e8a1vds9yal")
 PENDING_DEPOSIT_EXPIRY_MINUTES = 30
 
 BIG_WIN_CHANNEL_ID = -1002786435659  # The channel ID you provided
-BOT_USERNAME_FOR_LINK = "pusikGiftsBot" # Your bot's username for the link
+BOT_USERNAME_FOR_LINK = "axelgifts_bot" # Your bot's username for the link
 
 UPGRADE_MAX_CHANCE = Decimal('75.0')  # Maximum possible chance in %
 UPGRADE_MIN_CHANCE = Decimal('3.0')   # Minimum possible chance in %
@@ -263,13 +263,13 @@ if bot: # Ensure bot instance exists
         # This part remains the same, sending the welcome message and the button to open the Web App
         markup = types.InlineKeyboardMarkup()
         web_app_info = types.WebAppInfo(url=WEBAPP_URL)
-        app_button = types.InlineKeyboardButton(text="🎮 Open Pusik Gifts", web_app=web_app_info)
+        app_button = types.InlineKeyboardButton(text="🎮 Open Axel Gifts", web_app=web_app_info)
         markup.add(app_button)
 
         bot.send_photo(
             message.chat.id,
-            photo="https://i.ibb.co/5Q2KK6D/IMG-20250522-184911-835.jpg",
-            caption="Welcome to Pusik Gifts! 🎁\n\nTap the button below to start!",
+            photo="https://i.ibb.co/HTD3Y4sq/photo-2025-07-27-17-52-53.jpg",
+            caption="Welcome to Axel Gifts! 🎁\n\nTap the button below to start!",
             reply_markup=markup
         )
 
@@ -528,7 +528,7 @@ if bot: # Ensure bot instance exists
     @bot.message_handler(func=lambda message: True)
     def echo_all(message):
         logger.info(f"Received non-command message from {message.chat.id}: {message.text[:50]}")
-        bot.reply_to(message, "Send /start, to open Pusik Gifts")
+        bot.reply_to(message, "Send /start, to open Axel Gifts")
 
 # --- Webhook Setup Function (to be called from your main app setup) ---
 # You need to pass your Flask 'app' instance to this function to register the route.
@@ -1907,7 +1907,7 @@ def validate_init_data(init_data_str: str, bot_token_for_validation: str) -> dic
 # --- API Routes ---
 @app.route('/')
 def index_route():
-    return "Pusik Gifts API Backend is Running!"
+    return "Axel Gifts API Backend is Running!"
 
 @app.route('/api/get_user_data', methods=['POST'])
 def get_user_data_api():
